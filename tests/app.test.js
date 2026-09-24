@@ -1,6 +1,11 @@
 const request = require("supertest");
 const app = require("../app");
 
+beforeAll(async () => {
+    await request(app)
+        .get("/crear-usuarios");
+});
+
 describe("Pruebas del Sistema de Donaciones", () => {
 
     test("Debe rechazar acceso a donantes sin token", async () => {
