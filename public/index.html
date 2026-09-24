@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Donaciones</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <h1>Sistema de Donaciones</h1>
+
+            <p class="subtitle">
+                Inicia sesión para continuar
+            </p>
+
+            <form id="loginForm">
+
+                <label for="usuario">Usuario</label>
+                <input
+                    type="text"
+                    id="usuario"
+                    placeholder="Ingresa tu usuario"
+                    required
+                >
+
+                <label for="contrasena">Contraseña</label>
+                <input
+                    type="password"
+                    id="contrasena"
+                    placeholder="Ingresa tu contraseña"
+                    required
+                >
+
+                <button type="submit">
+                    Iniciar sesión
+                </button>
+
+                <p id="mensaje" class="mensaje"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
