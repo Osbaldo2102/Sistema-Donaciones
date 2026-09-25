@@ -3,6 +3,9 @@ const db = require("./database/database");
 const jwt = require("jsonwebtoken");
 
 const app = express();
+
+app.disable("x-powered-by");
+
 const PORT = 3000;
 
 app.use(express.json());
